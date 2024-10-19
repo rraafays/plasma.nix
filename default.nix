@@ -13,6 +13,7 @@ in
   };
 
   programs.dconf.enable = true;
+  programs.partition-manager.enable = true;
 
   home-manager.users.${USER} = {
     home.packages = with pkgs; [
