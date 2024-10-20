@@ -17,22 +17,22 @@ in
 
   home-manager.users.${USER} = {
     home.packages = with pkgs; [
-      nur.repos.wolfangaukang.mouseless
+      fswebcam
+      handbrake
+      kde-gtk-config
+      kdePackages.filelight
+      kdePackages.k3b
+      kdePackages.kcalc
+      kdePackages.plasma-thunderbolt
+      kdePackages.plymouth-kcm
+      kdePackages.sddm-kcm
       kitty
       konsave
-      kde-gtk-config
-      soulseekqt
-      fswebcam
       krita
-      handbrake
       lunacy
+      nur.repos.wolfangaukang.mouseless
+      soulseekqt
       unstable.polonium
-      kdePackages.sddm-kcm
-      kdePackages.plymouth-kcm
-      kdePackages.plasma-thunderbolt
-      kdePackages.filelight
-      kdePackages.kcalc
-      kdePackages.k3b
     ];
   };
 }
