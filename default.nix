@@ -19,13 +19,10 @@ in
     home.packages = with pkgs; [
       fswebcam
       handbrake
-      kde-gtk-config
       kdePackages.filelight
       kdePackages.k3b
       kdePackages.kcalc
-      kdePackages.plasma-thunderbolt
-      kdePackages.plymouth-kcm
-      kdePackages.sddm-kcm
+      kdePackages.taglib
       kitty
       konsave
       krita
@@ -35,4 +32,12 @@ in
       unstable.polonium
     ];
   };
+  environment.systemPackages = with pkgs; [
+    kde-gtk-config
+    kdePackages.kcmutils
+    kdePackages.plasma-firewall
+    kdePackages.plasma-thunderbolt
+    kdePackages.plymouth-kcm
+    kdePackages.sddm-kcm
+  ];
 }
