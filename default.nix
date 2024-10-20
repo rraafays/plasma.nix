@@ -21,7 +21,15 @@ in
       kitty
       konsave
       kde-gtk-config
+      soulseekqt
+      fswebcam
       unstable.polonium
+      kdePackages.sddm-kcm
+      kdePackages.plymouth-kcm
+      kdePackages.plasma-thunderbolt
+      kdePackages.filelight
+      kdePackages.kcalc
+      kdePackages.k3b
     ];
   };
 }
