@@ -23,6 +23,9 @@ in
       kde-gtk-config
       soulseekqt
       fswebcam
+      krita
+      handbrake
+      lunacy
       unstable.polonium
       kdePackages.sddm-kcm
       kdePackages.plymouth-kcm
