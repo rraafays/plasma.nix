@@ -34,6 +34,7 @@ in
   };
   environment.systemPackages = with pkgs; [
     kde-gtk-config
+    kde-rounded-corners
     kdePackages.kcmutils
     kdePackages.plasma-firewall
     kdePackages.plasma-thunderbolt
