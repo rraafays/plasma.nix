@@ -35,7 +35,6 @@ in
   environment.systemPackages = with pkgs; [
     kde-rounded-corners
     kdePackages.kcmutils
-    kdePackages.plasma-firewall
     kdePackages.plasma-thunderbolt
     kdePackages.plymouth-kcm
     kdePackages.sddm-kcm
