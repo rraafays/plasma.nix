@@ -34,6 +34,7 @@ in
   };
   environment.systemPackages = with pkgs; [
     kde-rounded-corners
+    kdePackages.bluedevil
     kdePackages.kcmutils
     kdePackages.plasma-thunderbolt
     kdePackages.plymouth-kcm
