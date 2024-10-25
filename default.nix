@@ -41,10 +41,15 @@ in
   environment.systemPackages = with pkgs; [
     kde-rounded-corners
     kdePackages.bluedevil
+    kdePackages.kaccounts-integration
+    kdePackages.kaccounts-providers
     kdePackages.kcmutils
+    kdePackages.kio-gdrive
     kdePackages.plasma-thunderbolt
     kdePackages.plymouth-kcm
     kdePackages.sddm-kcm
+    kdePackages.signond
+    libsForQt5.qoauth
     unstable.kde-gtk-config
   ];
 }
