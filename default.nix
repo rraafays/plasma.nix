@@ -23,12 +23,12 @@ in
 
   home-manager.users.${USER} = {
     home.packages = with pkgs; [
-      fswebcam
       handbrake
       kdePackages.filelight
       kdePackages.k3b
       kdePackages.kcalc
       kdePackages.taglib
+      kdePackages.kamera
       kitty
       konsave
       krita
