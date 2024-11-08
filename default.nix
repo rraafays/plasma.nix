@@ -39,6 +39,8 @@ in
     ];
   };
   environment.systemPackages = with pkgs; [
+    clinfo
+    glxinfo
     kde-rounded-corners
     kdePackages.bluedevil
     kdePackages.kaccounts-integration
@@ -51,5 +53,7 @@ in
     kdePackages.signond
     libsForQt5.qoauth
     unstable.kde-gtk-config
+    vulkan-tools
+    wayland-utils
   ];
 }
