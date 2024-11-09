@@ -56,5 +56,6 @@ in
     vulkan-tools
     wayland-utils
     capitaine-cursors-themed
+    kde-gruvbox
   ];
 }
