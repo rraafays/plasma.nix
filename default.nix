@@ -53,6 +53,7 @@ in
     kdePackages.signond
     libsForQt5.qoauth
     unstable.kde-gtk-config
+    unstable.python312Packages.kde-material-you-colors
     vulkan-tools
     wayland-utils
   ];
