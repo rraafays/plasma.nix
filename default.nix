@@ -55,5 +55,6 @@ in
     unstable.kde-gtk-config
     vulkan-tools
     wayland-utils
+    capitaine-cursors-themed
   ];
 }
