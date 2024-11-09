@@ -29,7 +29,6 @@ in
       kdePackages.kcalc
       kdePackages.taglib
       kdePackages.kamera
-      kitty
       konsave
       krita
       lunacy
