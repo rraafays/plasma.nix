@@ -26,9 +26,9 @@ in
       handbrake
       kdePackages.filelight
       kdePackages.k3b
+      kdePackages.kamera
       kdePackages.kcalc
       kdePackages.taglib
-      kdePackages.kamera
       konsave
       krita
       lunacy
@@ -38,8 +38,10 @@ in
     ];
   };
   environment.systemPackages = with pkgs; [
+    capitaine-cursors-themed
     clinfo
     glxinfo
+    kde-gruvbox
     kde-rounded-corners
     kdePackages.bluedevil
     kdePackages.kaccounts-integration
@@ -54,7 +56,6 @@ in
     unstable.kde-gtk-config
     vulkan-tools
     wayland-utils
-    capitaine-cursors-themed
-    kde-gruvbox
+    where-is-my-sddm-theme
   ];
 }
