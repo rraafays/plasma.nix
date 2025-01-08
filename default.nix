@@ -57,5 +57,7 @@ in
     vulkan-tools
     wayland-utils
     where-is-my-sddm-theme
+    application-title-bar
+    plasma-applet-commandoutput
   ];
 }
