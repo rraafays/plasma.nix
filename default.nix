@@ -35,6 +35,7 @@ in
       nur.repos.wolfangaukang.mouseless
       soulseekqt
       unstable.polonium
+      kdePackages.oxygen-sounds
     ];
   };
   environment.systemPackages = with pkgs; [
