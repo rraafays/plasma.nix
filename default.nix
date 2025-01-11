@@ -26,19 +26,14 @@ in
       handbrake
       kdePackages.filelight
       kdePackages.k3b
-      kdePackages.kamera
-      kdePackages.kcalc
-      kdePackages.taglib
       konsave
       krita
-      lunacy
       nur.repos.wolfangaukang.mouseless
-      soulseekqt
       unstable.polonium
-      kdePackages.oxygen-sounds
     ];
   };
   environment.systemPackages = with pkgs; [
+    application-title-bar
     capitaine-cursors-themed
     clinfo
     glxinfo
@@ -49,16 +44,16 @@ in
     kdePackages.kaccounts-providers
     kdePackages.kcmutils
     kdePackages.kio-gdrive
+    kdePackages.oxygen-sounds
     kdePackages.plasma-thunderbolt
     kdePackages.plymouth-kcm
     kdePackages.sddm-kcm
     kdePackages.signond
     libsForQt5.qoauth
+    plasma-applet-commandoutput
     unstable.kde-gtk-config
     vulkan-tools
     wayland-utils
     where-is-my-sddm-theme
-    application-title-bar
-    plasma-applet-commandoutput
   ];
 }
