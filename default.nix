@@ -34,7 +34,6 @@ in
   };
   environment.systemPackages = with pkgs; [
     (pkgs.writeShellScriptBin "plasma-changeicons" "exec -a $0 ${plasma-workspace}/libexec/plasma-changeicons $@")
-    (pkgs.writeShellScriptBin "pywal" "exec -a $0 ${python312Packages.pywal}/bin/wal $@")
     (pkgs.writeShellScriptBin "qdbus6" "exec -a $0 ${kdePackages.qttools}/bin/qdbus $@")
     application-title-bar
     capitaine-cursors-themed
@@ -53,6 +52,7 @@ in
     kdePackages.sddm-kcm
     kdePackages.signond
     libsForQt5.qoauth
+    matugen
     plasma-applet-commandoutput
     python312Packages.kde-material-you-colors
     python312Packages.pywal
