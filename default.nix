@@ -55,5 +55,10 @@ in
     vulkan-tools
     wayland-utils
     where-is-my-sddm-theme
+    python312Packages.kde-material-you-colors
+    python312Packages.pywal
+    (pkgs.writeShellScriptBin "pywal" "exec -a $0 ${python312Packages.pywal}/bin/wal $@")
+    (pkgs.writeShellScriptBin "plasma-changeicons" "exec -a $0 ${plasma-workspace}/libexec/plasma-changeicons $@")
+    (pkgs.writeShellScriptBin "qdbus6" "exec -a $0 ${kdePackages.qttools}/bin/qdbus $@")
   ];
 }
