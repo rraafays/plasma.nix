@@ -60,5 +60,6 @@ in
     vulkan-tools
     wayland-utils
     where-is-my-sddm-theme
+    plasma-panel-colorizer
   ];
 }
