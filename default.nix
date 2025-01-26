@@ -54,12 +54,13 @@ in
     libsForQt5.qoauth
     matugen
     plasma-applet-commandoutput
-    python312Packages.kde-material-you-colors
-    python312Packages.pywal
     unstable.kde-gtk-config
     vulkan-tools
     wayland-utils
     where-is-my-sddm-theme
     plasma-panel-colorizer
+    (python312Packages.kde-material-you-colors.overrideAttrs (oldAttrs: {
+      propagatedBuildInputs = oldAttrs.propagatedBuildInputs ++ [ python312Packages.pywal ];
+    }))
   ];
 }
