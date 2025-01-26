@@ -52,7 +52,6 @@ in
     kdePackages.sddm-kcm
     kdePackages.signond
     libsForQt5.qoauth
-    matugen
     plasma-applet-commandoutput
     unstable.kde-gtk-config
     vulkan-tools
