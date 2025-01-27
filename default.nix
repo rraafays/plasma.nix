@@ -33,8 +33,6 @@ in
     ];
   };
   environment.systemPackages = with pkgs; [
-    (pkgs.writeShellScriptBin "plasma-changeicons" "exec -a $0 ${plasma-workspace}/libexec/plasma-changeicons $@")
-    (pkgs.writeShellScriptBin "qdbus6" "exec -a $0 ${kdePackages.qttools}/bin/qdbus $@")
     application-title-bar
     capitaine-cursors-themed
     clinfo
@@ -53,13 +51,10 @@ in
     kdePackages.signond
     libsForQt5.qoauth
     plasma-applet-commandoutput
+    plasma-panel-colorizer
     unstable.kde-gtk-config
     vulkan-tools
     wayland-utils
     where-is-my-sddm-theme
-    plasma-panel-colorizer
-    (python312Packages.kde-material-you-colors.overrideAttrs (oldAttrs: {
-      propagatedBuildInputs = oldAttrs.propagatedBuildInputs ++ [ python312Packages.pywal ];
-    }))
   ];
 }
