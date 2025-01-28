@@ -29,7 +29,7 @@ in
       konsave
       krita
       nur.repos.wolfangaukang.mouseless
-      unstable.polonium
+      unstable.kdePackages.karousel
     ];
   };
   environment.systemPackages = with pkgs; [
