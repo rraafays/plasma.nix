@@ -55,6 +55,5 @@ in
     unstable.kde-gtk-config
     vulkan-tools
     wayland-utils
-    where-is-my-sddm-theme
   ];
 }
