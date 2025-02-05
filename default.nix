@@ -30,6 +30,7 @@ in
       unstable.polonium
     ];
   };
+
   environment.systemPackages = with pkgs; [
     application-title-bar
     capitaine-cursors-themed
@@ -52,5 +53,10 @@ in
     unstable.kde-gtk-config
     vulkan-tools
     wayland-utils
+  ];
+
+  environment.plasma6.excludePackages = with pkgs; [
+    kdePackages.elisa
+    kdePackages.kwallet
   ];
 }
