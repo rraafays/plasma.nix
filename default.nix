@@ -8,11 +8,9 @@ in
     xserver.enable = true;
     desktopManager.plasma6.enable = true;
     displayManager = {
+      hiddenUsers = [ "restic" ];
       enable = true;
-      sddm = {
-        enable = true;
-        wayland.enable = true;
-      };
+      ly.enable = true;
     };
   };
 
@@ -47,7 +45,6 @@ in
     kdePackages.oxygen-sounds
     kdePackages.plasma-thunderbolt
     kdePackages.plymouth-kcm
-    kdePackages.sddm-kcm
     kdePackages.signond
     libsForQt5.qoauth
     plasma-applet-commandoutput
