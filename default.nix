@@ -64,4 +64,6 @@ in
       ksshaskpass
     ];
   };
+
+  security.pam.services.sddm.enableKwallet = false;
 }
