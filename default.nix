@@ -31,33 +31,37 @@ in
     ];
   };
 
-  environment.systemPackages = with pkgs; [
-    application-title-bar
-    capitaine-cursors-themed
-    clinfo
-    glxinfo
-    kde-gruvbox
-    kde-rounded-corners
-    kdePackages.bluedevil
-    kdePackages.kaccounts-integration
-    kdePackages.kaccounts-providers
-    kdePackages.kcmutils
-    kdePackages.kio-gdrive
-    kdePackages.oxygen-sounds
-    kdePackages.plasma-thunderbolt
-    kdePackages.plymouth-kcm
-    kdePackages.signond
-    libsForQt5.qoauth
-    plasma-applet-commandoutput
-    plasma-panel-colorizer
-    unstable.kde-gtk-config
-    vulkan-tools
-    wayland-utils
-  ];
+  environment = {
+    systemPackages = with pkgs; [
+      application-title-bar
+      capitaine-cursors-themed
+      clinfo
+      glxinfo
+      kde-gruvbox
+      kde-rounded-corners
+      kdePackages.bluedevil
+      kdePackages.kaccounts-integration
+      kdePackages.kaccounts-providers
+      kdePackages.kcmutils
+      kdePackages.kio-gdrive
+      kdePackages.oxygen-sounds
+      kdePackages.plasma-thunderbolt
+      kdePackages.plymouth-kcm
+      kdePackages.signond
+      libsForQt5.qoauth
+      plasma-applet-commandoutput
+      plasma-panel-colorizer
+      unstable.kde-gtk-config
+      vulkan-tools
+      wayland-utils
+    ];
 
-  environment.plasma6.excludePackages = with pkgs; [
-    kdePackages.elisa
-    kdePackages.kwallet
-    kdePackages.ksshaskpass
-  ];
+    plasma6.excludePackages = with pkgs.kdePackages; [
+      elisa
+      kwallet
+      kwallet-pam
+      kwalletmanager
+      ksshaskpass
+    ];
+  };
 }
