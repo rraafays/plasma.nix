@@ -21,13 +21,6 @@ in
 
   home-manager.users.${USER} = {
     home.packages = with pkgs; [
-      handbrake
-      kdePackages.filelight
-      kdePackages.k3b
-      konsave
-      krita
-      nur.repos.wolfangaukang.mouseless
-      unstable.polonium
     ];
   };
 
@@ -51,9 +44,15 @@ in
       libsForQt5.qoauth
       plasma-applet-commandoutput
       plasma-panel-colorizer
-      unstable.kde-gtk-config
+      kdePackages.kde-gtk-config
       vulkan-tools
       wayland-utils
+      kdePackages.filelight
+      kdePackages.k3b
+      konsave
+      krita
+      nur.repos.wolfangaukang.mouseless
+      polonium
     ];
 
     plasma6.excludePackages = with pkgs.kdePackages; [
