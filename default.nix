@@ -19,11 +19,6 @@ in
     partition-manager.enable = true;
   };
 
-  home-manager.users.${USER} = {
-    home.packages = with pkgs; [
-    ];
-  };
-
   environment = {
     systemPackages = with pkgs; [
       application-title-bar
@@ -33,26 +28,26 @@ in
       kde-gruvbox
       kde-rounded-corners
       kdePackages.bluedevil
+      kdePackages.filelight
+      kdePackages.k3b
       kdePackages.kaccounts-integration
       kdePackages.kaccounts-providers
       kdePackages.kcmutils
+      kdePackages.kde-gtk-config
       kdePackages.kio-gdrive
       kdePackages.oxygen-sounds
       kdePackages.plasma-thunderbolt
       kdePackages.plymouth-kcm
       kdePackages.signond
-      libsForQt5.qoauth
-      plasma-applet-commandoutput
-      plasma-panel-colorizer
-      kdePackages.kde-gtk-config
-      vulkan-tools
-      wayland-utils
-      kdePackages.filelight
-      kdePackages.k3b
       konsave
       krita
+      libsForQt5.qoauth
       nur.repos.wolfangaukang.mouseless
+      plasma-applet-commandoutput
+      plasma-panel-colorizer
       polonium
+      vulkan-tools
+      wayland-utils
     ];
 
     plasma6.excludePackages = with pkgs.kdePackages; [
