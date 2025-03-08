@@ -1,12 +1,10 @@
 { pkgs, ... }:
 
-let
-  USER = "raf";
-in
 {
   services = {
     xserver.enable = true;
     desktopManager.plasma6.enable = true;
+    pulseaudio.enable = true;
     displayManager = {
       hiddenUsers = [ "restic" ];
       enable = true;
@@ -46,6 +44,7 @@ in
       plasma-applet-commandoutput
       plasma-panel-colorizer
       polonium
+      kdePackages.krohnkite
       vulkan-tools
       wayland-utils
     ];
